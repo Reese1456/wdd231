@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Home Page</title>
+    <meta name="description" content="Home page description">
+    <meta name="author" content="Reese Blignaut">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
+    <header>
+        <img src="images/reese_b.jpg" id="profile-picture">
+        <h1>Reese Blignaut</h1>
+    </header>
+
+    <nav>
+        <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+
+        <ul id="primaryNav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="#">LinkedIN</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <div class="top-sections">
+            <section id="course-work">
+                <h2>Course Work</h2>
+                <div id="course-work-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis, repellendus inventore facilis nam deserunt, labore consectetur tempora veritatis ipsam magni, distinctio quibusdam cupiditate magnam minus rerum autem natus. Ea ullam id dignissimos! Eum reiciendis saepe error consequuntur, nisi ullam? Facilis eveniet ipsa inventore dignissimos labore quia consequuntur alias architecto.</p>
+                </div>
+            </section>
+
+            <section id="hometown">
+                <h2>Gommiswald, Switzerland</h2>
+                <img src="images/gommiswald_switzerland.jpg">
+            </section>
+        </div>
+
+        <section id="course-container-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filterButtonsMenu">
+                <button class="filterButton" id="filter-all">All Courses</button>
+                <button class="filterButton" id="filter-wdd">WDD Courses</button>
+                <button class="filterButton" id="filter-cse">CSE Courses</button>
+            </div>
+            <div id="certificate-container"></div>
+        </section>
     
+    </main>
+
+    <footer>
+
+        <p>
+            <span id="copyright-year"></span>
+            | Reese Blignaut | Switzerland
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
