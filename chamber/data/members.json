@@ -1,0 +1,75 @@
+[
+    {
+      "name": "Sunrise Bakery",
+      "address": "123 Morning Lane, Sunnyvale, SG 94086",
+      "phone": "(408) 555-1234",
+      "website": "http://www.sunrisebakery.com",
+      "image": "images/sunrise_bakery.png",
+      "membership": 3
+    },
+    {
+      "name": "TechNova Solutions",
+      "address": "456 Innovation Way, San Jose, SG 95131",
+      "phone": "(408) 555-5678",
+      "website": "http://www.technova.com",
+      "image": "images/technova_solutions.png",
+      "membership": 2
+    },
+    {
+      "name": "GreenLeaf Grocers",
+      "address": "789 Eco Street, Palo Alto, SG 94301",
+      "phone": "(650) 555-7890",
+      "website": "http://www.greenleaf.com",
+      "image": "images/greenleaf.png",
+      "membership": 1
+    },
+    {
+      "name": "Elite Fitness Club",
+      "address": "101 Workout Blvd, Cupertino, SG 95014",
+      "phone": "(408) 555-1010",
+      "website": "http://www.elitefitness.com",
+      "image": "images/elite_fitness.png",
+      "membership": 3
+    },
+    {
+      "name": "Crafty Creations",
+      "address": "202 Artisan Alley, Santa Clara, SG 95050",
+      "phone": "(408) 555-2020",
+      "website": "http://www.craftycreations.com",
+      "image": "images/crafty_creations.png",
+      "membership": 2
+    },
+    {
+      "name": "Paradise Spa",
+      "address": "303 Relaxation Road, Los Gatos, SG 95032",
+      "phone": "(408) 555-3030",
+      "website": "http://www.paradisespa.com",
+      "image": "images/paradise_spa.png",
+      "membership": 1
+    },
+    {
+      "name": "Urban Eats Bistro",
+      "address": "404 Flavor Street, Mountain View, SG 94040",
+      "phone": "(650) 555-4040",
+      "website": "http://www.urbaneats.com",
+      "image": "images/urban_eats_bistro.png",
+      "membership": 2
+    },
+    {
+      "name": "Digital Dreams Photography",
+      "address": "505 Lens Avenue, Fremont, SG 94538",
+      "phone": "(510) 555-5050",
+      "website": "http://www.digitaldreams.com",
+      "image": "images/digital_dreams.png",
+      "membership": 3
+    },
+    {
+      "name": "Healthy Paws Vet Clinic",
+      "address": "606 Pet Care Dr, Redwood City, SG 94061",
+      "phone": "(650) 555-6060",
+      "website": "http://www.healthypaws.com",
+      "image": "images/healthy_paws_clinic.png",
+      "membership": 1
+    }
+]
+  

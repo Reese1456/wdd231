@@ -122,13 +122,23 @@ function displayCourses(courseList) {
         
     });
 
-    const totalCredits = calculateTotalCredits(courseList);
-    const totalCreditsDisplay = document.createElement('p');
-    totalCreditsDisplay.innerHTML = `<strong>Total Credits: </strong>${totalCredits}`;
-    container.appendChild(totalCreditsDisplay);
+
+
+}
+
+function displayTotalCredits(courseList) {
+    const totalCreditsContainer = document.getElementById('total-credits-container');
+    
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+    
+    totalCreditsContainer.innerHTML = '';
+
+    totalCreditsContainer.textContent = `Total Credits: ${totalCredits}`;
+
 }
 
 displayCourses(courses);
+displayTotalCredits(courses);
 
 function setActiveButton(buttonId) {
     const buttons = document.querySelectorAll('.filterButton');
@@ -162,6 +172,8 @@ function calculateTotalCredits(courseList) {
     const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
     return totalCredits;
 }
+
+
 //document.addEventListener('DOMContentLoaded', () => {
 //    displayCourses(courses);
 //});
