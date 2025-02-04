@@ -1,0 +1,49 @@
+/* desktop.css – Desktop overrides */
+/* These styles will be applied when the viewport width is 801px or larger */
+
+@media (min-width: 801px) {
+    /* Hide the hamburger button on desktop */
+    #hamburger-btn {
+      display: none;
+    }
+  
+    /* Display navigation menu inline */
+    #page-nav ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      position: static;
+      width: auto;
+      box-shadow: none;
+      border-radius: 0;
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+      margin-right: 5rem;
+    }
+
+    #page-nav ul li {
+      display: flex;
+    }
+  
+    /* Adjust the navigation links for desktop */
+    #page-nav ul li a {
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+  
+    #page-nav ul li a:hover {
+      background-color: transparent;
+      color: whitesmoke;
+    }
+  
+    /* Position the dark mode toggle farther to the right on desktop */
+    #dark-mode-toggle {
+      right: 2rem;
+    }
+  }
