@@ -4,7 +4,6 @@
    1. Common Functions
    ============================== */
 
-// Dark mode toggle
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const rootElement = document.documentElement;
 
@@ -19,7 +18,6 @@ darkModeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
 });
 
-// Update footer copyright year
 document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
 /* ==============================
@@ -51,7 +49,7 @@ async function renderBusinessCards(jsonPath, containerSelector) {
 
         businesses.forEach((business) => {
             const card = document.createElement('div');
-            card.classList.add('business-card', 'grid-view'); // Default view is grid
+            card.classList.add('business-card', 'grid-view');
 
             if (business.membership === 3) card.classList.add('gold');
             else if (business.membership === 2) card.classList.add('silver');
@@ -113,8 +111,8 @@ if (document.querySelector('.business-card-container')) {
    ============================== */
 async function fetchCurrentWeather() {
     try {
-        const apiKey = 'e7e673091f093fac720d02e9cad521bd'; // Replace with actual API key
-        const location = 'St. Gallen'; // Replace with actual city
+        const apiKey = 'e7e673091f093fac720d02e9cad521bd'; 
+        const location = 'St. Gallen'; 
 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
         const response = await fetch(url);
@@ -142,37 +140,31 @@ if (document.querySelector('#current-weather')) {
    ============================== */
    async function fetchWeatherForecast() {
     try {
-        const apiKey = 'e7e673091f093fac720d02e9cad521bd'; // Replace with your API key.
-        const location = 'St. Gallen';  // Replace with your desired location.
+        const apiKey = 'e7e673091f093fac720d02e9cad521bd'; 
+        const location = 'St. Gallen'; 
 
-        // Fetch the 5-day forecast data
         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${apiKey}`;
         const response = await fetch(url);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         const forecastData = await response.json();
 
-        // Extract temperatures for the next 3 days
         const dailyForecasts = {};
         const forecastList = forecastData.list;
 
         forecastList.forEach((forecast) => {
-            const date = forecast.dt_txt.split(" ")[0]; // Get the YYYY-MM-DD part of the timestamp
-            const time = forecast.dt_txt.split(" ")[1]; // Get the HH:MM:SS part
+            const date = forecast.dt_txt.split(" ")[0]; 
+            const time = forecast.dt_txt.split(" ")[1]; 
 
-            // Select one forecast per day (preferring the one at 12:00 PM)
             if (!dailyForecasts[date] || time === "12:00:00") {
                 dailyForecasts[date] = forecast.main.temp;
             }
         });
 
-        // Convert the daily forecast object into an array and take the first 3 days
         const forecastEntries = Object.entries(dailyForecasts).slice(0, 3);
 
-        // Select the forecast display container
         const forecastContainer = document.querySelector('#weather-forecast');
 
-        // Generate the forecast HTML
         forecastContainer.innerHTML = `
             <h3>Weather Forecast for ${location}</h3>
             ${forecastEntries
@@ -189,7 +181,6 @@ if (document.querySelector('#current-weather')) {
     }
 }
 
-// Call the function to display the 3-day forecast if the element exists on the page
 if (document.querySelector('#weather-forecast')) {
     fetchWeatherForecast();
 }
