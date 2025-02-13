@@ -185,3 +185,50 @@ if (document.querySelector('#weather-forecast')) {
     fetchWeatherForecast();
 }
 
+/* ==============================
+   Join Page
+   ============================== */
+
+   document.addEventListener('DOMContentLoaded', function() {
+    // Open modal when "More Info" is clicked
+    const modalLinks = document.querySelectorAll('.open-modal');
+    modalLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        // Get the modal id from the parent card's data attribute
+        const modalId = this.parentElement.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = 'flex'; // Show modal using Flexbox centering
+        }
+      });
+    });
+  
+    // Close modal when close button (×) is clicked
+    const closeButtons = document.querySelectorAll('.modal .close');
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.closest('.modal').style.display = 'none';
+      });
+    });
+  
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', function(e) {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+  });
+
+  // Time stamp
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find the hidden timestamp field by its ID
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+      // Set its value to the current date and time in ISO format (YYYY-MM-DDTHH:MM:SS.sssZ)
+      timestampField.value = new Date().toISOString();
+    }
+  });
+
+
+  

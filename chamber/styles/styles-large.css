@@ -42,8 +42,20 @@
       color: whitesmoke;
     }
   
-    /* Position the dark mode toggle farther to the right on desktop */
+    
     #dark-mode-toggle {
       right: 2rem;
     }
+  }
+
+  .membership-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 1rem; 
+  }
+  .membership-cards .card {
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
   }

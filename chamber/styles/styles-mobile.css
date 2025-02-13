@@ -384,3 +384,222 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+
+/*---------------------------------
+     Join Page
+  ---------------------------------*/
+
+/* Container styling for the join section */
+.join-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form title */
+.join-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* General label styling */
+.join-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Input and textarea common styling */
+.join-section input[type="text"],
+.join-section input[type="email"],
+.join-section input[type="tel"],
+.join-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus styling */
+.join-section input[type="text"]:focus,
+.join-section input[type="email"]:focus,
+.join-section input[type="tel"]:focus,
+.join-section textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Fieldset and legend for membership level */
+.join-section fieldset {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.join-section fieldset legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Radio button labels (inline) */
+.join-section fieldset label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+/* Submit button styling */
+.join-section input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0f9415;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-section input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Container for Form and Membership Cards */
+.form-and-cards {
+  display: flex;
+  flex-direction: column; /* Stack vertically on small screens */
+  gap: 2rem;
+}
+
+/* Responsive Layout: Side-by-side on larger screens */
+@media (min-width: 768px) {
+  .form-and-cards {
+    flex-direction: row;
+  }
+  form {
+    flex: 1;
+  }
+  .membership-cards {
+    flex: 1;
+    margin-left: 2rem;
+  }
+}
+
+/* Membership Cards Styles */
+.membership-cards .card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Initial state for animation */
+  opacity: 0;
+  transform: translateY(20px);
+  
+  /* Animation properties */
+  animation: fadeInUp 0.8s forwards;
+}
+
+/* Stagger animations for each card */
+.membership-cards .card:nth-child(1) { animation-delay: 0.2s; }
+.membership-cards .card:nth-child(2) { animation-delay: 0.4s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.6s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Keyframes for fade in and slide up animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal Overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Close Button in Modal */
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*---------------------------------
+     Thank You Page
+  ---------------------------------*/
+
+  .thankyou-page .container {
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .info {
+      margin-top: 2rem;
+    }
+    
+    .info p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+    
+    .info strong {
+      display: inline-block;
+      width: 180px;
+      color: #555;
+    }
+  }
