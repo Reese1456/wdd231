@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - JRLT E‑Commerce Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="(min-width: 768px)">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body class="checkout-page">
+    <header>
+        <img src="images/JRLTLogo.png" class="logo" alt="JRLT Logo">
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tshirt.html">T‑Shirts</a></li>
+                <li><a href="hoody.html">Hoodies</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Checkout</h1>
+        <!-- Cart Summary Section -->
+        <section id="cart-summary">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here via JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Checkout Form Section -->
+        <section id="checkout-form">
+            <h2>Enter Your Details</h2>
+            <form id="checkout">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" required></textarea>
+
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Section: About Us -->
+            <div class="footer-left">
+                <p>
+                    About Us: We are passionate about quality apparel that suits every style.
+                    Our mission is to deliver comfort and style through our curated collections.
+                </p>
+            </div>
+            <!-- Center Section: Social Media Icons -->
+            <div class="footer-center">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <!-- Right Section: Copyright -->
+            <div class="footer-right">
+                <p>
+                    &copy; 2025 Reese Blignaut<br>
+                    WDD231 Final Project<br>
+                    E-Commerce Website
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your purchase is complete. We appreciate your business!</p>
+            <button id="modal-ok">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>

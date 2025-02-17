@@ -1,0 +1,150 @@
+{
+  "tshirts": [
+    {
+      "id": 1,
+      "name": "Classic Red T‑Shirt",
+      "price": 20.00,
+      "color": "Red",
+      "description": "A stylish red t‑shirt perfect for any casual outing.",
+      "image": "images/t1.png"
+    },
+    {
+      "id": 2,
+      "name": "Vintage Blue T‑Shirt",
+      "price": 22.00,
+      "color": "Blue",
+      "description": "A soft vintage blue t‑shirt that looks and feels great.",
+      "image": "images/t2.png"
+    },
+    {
+      "id": 3,
+      "name": "Sporty Green T‑Shirt",
+      "price": 18.00,
+      "color": "Green",
+      "description": "Lightweight and breathable for your active lifestyle.",
+      "image": "images/t3.png"
+    },
+    {
+      "id": 4,
+      "name": "Modern Black T‑Shirt",
+      "price": 25.00,
+      "color": "Black",
+      "description": "A sleek black t‑shirt that pairs well with any outfit.",
+      "image": "images/t4.png"
+    },
+    {
+      "id": 5,
+      "name": "Casual White T‑Shirt",
+      "price": 19.00,
+      "color": "White",
+      "description": "A classic white tee, a must-have for everyday wear.",
+      "image": "images/t5.png"
+    },
+    {
+      "id": 6,
+      "name": "Graphic T‑Shirt",
+      "price": 24.00,
+      "color": "Gray",
+      "description": "Featuring an eye-catching graphic design.",
+      "image": "images/t6.png"
+    },
+    {
+      "id": 7,
+      "name": "Striped T‑Shirt",
+      "price": 21.00,
+      "color": "Navy & White",
+      "description": "Nautical stripes for a trendy, timeless look.",
+      "image": "images/t7.png"
+    },
+    {
+      "id": 8,
+      "name": "Eco-Friendly T‑Shirt",
+      "price": 23.00,
+      "color": "Natural",
+      "description": "Made from organic cotton, sustainable and stylish.",
+      "image": "images/t8.png"
+    },
+    {
+      "id": 9,
+      "name": "Urban T‑Shirt",
+      "price": 26.00,
+      "color": "Charcoal",
+      "description": "A modern urban design with a comfortable fit.",
+      "image": "images/t9.png"
+    }
+  ],
+  "hoodies": [
+    {
+      "id": 1,
+      "name": "Classic Black Hoodie",
+      "price": 35.00,
+      "color": "Black",
+      "description": "A timeless black hoodie with a soft interior.",
+      "image": "images/h1.png"
+    },
+    {
+      "id": 2,
+      "name": "Cozy Gray Hoodie",
+      "price": 38.00,
+      "color": "Gray",
+      "description": "Stay warm in style with this comfortable gray hoodie.",
+      "image": "images/h2.png"
+    },
+    {
+      "id": 3,
+      "name": "Vintage Blue Hoodie",
+      "price": 40.00,
+      "color": "Blue",
+      "description": "A hoodie with a vintage wash, perfect for casual days.",
+      "image": "images/h3.png"
+    },
+    {
+      "id": 4,
+      "name": "Sporty Red Hoodie",
+      "price": 42.00,
+      "color": "Red",
+      "description": "Bold and vibrant, great for a sporty look.",
+      "image": "images/h4.png"
+    },
+    {
+      "id": 5,
+      "name": "Modern White Hoodie",
+      "price": 37.00,
+      "color": "White",
+      "description": "Clean and modern, a versatile piece for any wardrobe.",
+      "image": "images/h5.png"
+    },
+    {
+      "id": 6,
+      "name": "Urban Camo Hoodie",
+      "price": 39.00,
+      "color": "Camouflage",
+      "description": "An edgy hoodie featuring a trendy camouflage pattern.",
+      "image": "images/h6.png"
+    },
+    {
+      "id": 7,
+      "name": "Minimalist Hoodie",
+      "price": 36.00,
+      "color": "Navy",
+      "description": "Simple and understated design for everyday comfort.",
+      "image": "images/h7.png"
+    },
+    {
+      "id": 8,
+      "name": "Pullover Hoodie",
+      "price": 41.00,
+      "color": "Maroon",
+      "description": "A pullover style that’s perfect for layering on cooler days.",
+      "image": "images/h8.png"
+    },
+    {
+      "id": 9,
+      "name": "Eco Hoodie",
+      "price": 43.00,
+      "color": "Forest Green",
+      "description": "Made with sustainable materials, this hoodie is eco-friendly.",
+      "image": "images/h9.png"
+    }
+  ]
+}

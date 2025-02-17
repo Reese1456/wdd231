@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Shirts - JRLT E‑Commerce Site</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="(min-width: 768px)">
+    <script src="scripts/scripts.js" defer></script>
+
+</head>
+
+<body class="tshirts-page">
+    <header>
+        <img src="images/JRLTLogo.png" class="logo" alt="JRLT Logo">
+
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tshirt.html">T‑Shirts</a></li>
+                <li><a href="hoody.html">Hoodies</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>T‑Shirts Collection</h1>
+        <!-- Container for dynamically injected product cards -->
+        <section id="product-grid" class="product-grid"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Section: About Us -->
+            <div class="footer-left">
+                <p>
+                    About Us: We are passionate about quality apparel that suits every style.
+                    Our mission is to deliver comfort and style through our curated collections.
+                </p>
+            </div>
+            <!-- Center Section: Social Media Icons -->
+            <div class="footer-center">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <!-- Right Section: Copyright -->
+            <div class="footer-right">
+                <p>
+                    &copy; 2025 Reese Blignaut<br>
+                    WDD231 Final Project<br>
+                    E-Commerce Website
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Item Added Modal -->
+    <div id="itemAddedModal" class="modal">
+        <div class="modal-content">
+            <span class="close-item">&times;</span>
+            <h2>Item Added!</h2>
+            <p>The item has been added to your cart.</p>
+            <button id="item-added-ok">OK</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

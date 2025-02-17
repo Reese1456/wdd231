@@ -1,0 +1,131 @@
+/* Header Navigation: Switch to horizontal layout on larger screens */
+/* Large Screen Navigation Adjustments */
+
+/* Hide the hamburger menu on larger screens */
+.ham-menu {
+  display: none;
+}
+
+/* Reset the off-screen menu styles so it becomes a normal inline nav */
+.off-screen-menu {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: none;
+  background-color: transparent;
+  transition: none;
+  margin-left: auto;
+}
+
+.off-screen-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.off-screen-menu ul li {
+  list-style: none;
+}
+
+.off-screen-menu ul a {
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.off-screen-menu ul a:hover {
+  transform: translateY(-3px);
+  color: #ccc;
+}
+
+.home-cards {
+  display: block;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin-top: 1rem;
+}
+
+.tshirt-card {
+  grid-template-areas:
+    "info image";
+}
+
+.hoodie-card {
+  grid-template-areas:
+    "image info";
+}
+
+.card-info {
+  grid-area: info;
+  padding: 2em;
+  color: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tshirt-card .card-info {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.card-info h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.card-info p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.tshirt-card {
+  padding-left: 0;
+}
+
+.card-image {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
