@@ -42,6 +42,7 @@ header {
 }
 
 .off-screen-menu {
+  z-index: 9998;
   background-color: var(--header-bg);
   height: 100vh;
   width: 100%;
@@ -69,6 +70,7 @@ nav {
 }
 
 .ham-menu {
+  z-index: 9999;
   height: 50px;
   width: 40px;
   margin-left: auto;
@@ -227,19 +229,16 @@ p {
   will-change: transform;
 }
 
-.product-card button:disabled,
-.button:hover {
+.product-card button:disabled {
   pointer-events: none;
 }
 
-.product-card button:hover,
-.button:hover {
+.product-card button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-.product-card button:active,
-.button:active {
+.product-card button:active {
   box-shadow: none;
   transform: translateY(0);
 }
