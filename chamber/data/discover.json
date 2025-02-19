@@ -1,0 +1,51 @@
+[
+    {
+      "title": "St. Gallen Cathedral",
+      "image": "images/st-gallen-cathedral.webp",
+      "address": "Spiegelgasse 1, 9000 St. Gallen, Switzerland",
+      "description": "An iconic cathedral known for its stunning baroque architecture and historical significance."
+    },
+    {
+      "title": "Abbey Library",
+      "image": "images/abbey-library.webp",
+      "address": "Abteistrasse 1, 9000 St. Gallen, Switzerland",
+      "description": "Home to ancient manuscripts and a magnificent collection of medieval books in a striking architectural setting."
+    },
+    {
+      "title": "Textile Museum",
+      "image": "images/textile-museum.webp",
+      "address": "Textilstrasse 2, 9000 St. Gallen, Switzerland",
+      "description": "Discover the rich history of textile production in the region through interactive exhibits and artifacts."
+    },
+    {
+      "title": "Old Town St. Gallen",
+      "image": "images/old-town.webp",
+      "address": "Altstadt, 9000 St. Gallen, Switzerland",
+      "description": "Wander through narrow, historic streets lined with centuries-old buildings and vibrant local culture."
+    },
+    {
+      "title": "St. Gallen Art Museum",
+      "image": "images/art-museum.webp",
+      "address": "Kunststrasse 3, 9000 St. Gallen, Switzerland",
+      "description": "Featuring a mix of contemporary and historical art pieces displayed in a modern, spacious gallery."
+    },
+    {
+      "title": "Wildpark Peter and Paul",
+      "image": "images/wildpark.webp",
+      "address": "Waldstrasse 4, 9000 St. Gallen, Switzerland",
+      "description": "A family-friendly park offering a chance to observe local wildlife in a natural, open setting."
+    },
+    {
+      "title": "Botanical Gardens",
+      "image": "images/botanical-gardens.webp",
+      "address": "Grünstrasse 5, 9000 St. Gallen, Switzerland",
+      "description": "Enjoy a serene stroll through beautifully landscaped gardens featuring a diverse range of plant species."
+    },
+    {
+      "title": "St. Gallen Market",
+      "image": "images/market.webp",
+      "address": "Marktplatz, 9000 St. Gallen, Switzerland",
+      "description": "Experience the local flavor with fresh produce, artisan crafts, and a lively atmosphere at this bustling market."
+    }
+  ]
+  

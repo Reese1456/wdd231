@@ -59,3 +59,16 @@
     box-sizing: border-box;
     margin-bottom: 1rem;
   }
+
+  @media screen and (min-width: 1024px) {
+    .grid-container {
+      grid-template-areas: "cards sidebar";
+      grid-template-columns: 2fr 1fr;
+    }
+    
+    #cardsContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
